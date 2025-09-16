@@ -1,0 +1,94 @@
+Tracking Prevention blocked access to storage for <URL>.
+15The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+15The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+15The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+Google-Ai-Studio-Quarter:1  The source list for the Content Security Policy directive 'default-src' contains an invalid source: ''unsafe-dynamic''. It will be ignored.
+Google-Ai-Studio-Quarter:1  The Content-Security-Policy directive 'default-src' contains 'report-uri' as a source expression. Did you want to add it as a directive and forget a semicolon?
+Google-Ai-Studio-Quarter:1  The source list for Content Security Policy directive 'default-src' contains a source with an invalid path: '/api/4509669501698048/security/?sentry_key=7eb3d90eb4660416caf507087367e67e'. The query component, including the '?', will be ignored.
+stallwart.build.js:1 stallwart: failed ping 1
+_app-014a1ffdcde2d552.js:38 
+      /////////////////////
+   ///////////////////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////        Curious and driven?
+  ///////////////@@@@@@@///////        Work with us!
+  ///////////////@@@@@@@///////
+  ///////////////@@@@@@@///////        https://join.replit.com/hack.with.us
+  ////////@@@@@@@//////////////
+  ////////@@@@@@@//////////////
+  ////////@@@@@@#//////////////
+   ///////////////////////////
+      /////////////////////
+      
+_app-014a1ffdcde2d552.js:38 [LaunchDarkly] LaunchDarkly client initialized
+recaptcha__en.js:681 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2
+recaptcha__en.js:681 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v18/KFOlCnqEu92Fr1MmEU9fBBc4.woff2
+10Error while parsing the 'sandbox' attribute: 'allow-downloads-without-user-activation' is an invalid sandbox flag.
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'ambient-light-sensor'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'battery'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'execution-while-not-rendered'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'execution-while-out-of-viewport'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'layout-animations'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'legacy-image-formats'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'navigation-override'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'oversized-images'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'publickey-credentials'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'speaker-selection'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'unoptimized-images'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'unsized-media'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Unrecognized feature: 'pointer-lock'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Allow attribute will take precedence over 'allowfullscreen'.
+_ @ framework-8c57d7014dc04c0f.js:1
+framework-8c57d7014dc04c0f.js:1  Allow attribute will take precedence over 'allowpaymentrequest'.
+_ @ framework-8c57d7014dc04c0f.js:1
+stallwart.build.js:1 stallwart: failed ping 1
+4542-72cc51ef8f431942.js:1 [Intervention] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://replit.com/public/fonts/replit-icons.woff
+workspace_iframe.html:32  Unrecognized feature: 'ambient-light-sensor'.
+workspace_iframe.html:32  Unrecognized feature: 'battery'.
+workspace_iframe.html:32  Unrecognized feature: 'execution-while-not-rendered'.
+workspace_iframe.html:32  Unrecognized feature: 'execution-while-out-of-viewport'.
+workspace_iframe.html:32  Unrecognized feature: 'layout-animations'.
+workspace_iframe.html:32  Unrecognized feature: 'legacy-image-formats'.
+workspace_iframe.html:32  Unrecognized feature: 'navigation-override'.
+workspace_iframe.html:32  Unrecognized feature: 'oversized-images'.
+workspace_iframe.html:32  Unrecognized feature: 'publickey-credentials'.
+workspace_iframe.html:32  Unrecognized feature: 'speaker-selection'.
+workspace_iframe.html:32  Unrecognized feature: 'unoptimized-images'.
+workspace_iframe.html:32  Unrecognized feature: 'unsized-media'.
+workspace_iframe.html:32  Allow attribute will take precedence over 'allowfullscreen'.
+workspace_iframe.html:32  Allow attribute will take precedence over 'allowpaymentrequest'.
+16644f42-8ec5-4134-80a8-c2623329b5c6-00-2zu6rr4ycqii9.picard.replit.dev/:1 
+        
+        
+        Failed to load resource: the server responded with a status of 403 (Forbidden)
+16644f42-8ec5-4134-80a8-c2623329b5c6-00-2zu6rr4ycqii9.picard.replit.dev/:1 
+        
+        
+        Failed to load resource: the server responded with a status of 403 (Forbidden)
+stallwart.build.js:1 stallwart: failed ping 1
+16644f42-8ec5-4134-80a8-c2623329b5c6-00-2zu6rr4ycqii9.picard.replit.dev/:1 
+        
+        
+        Failed to load resource: the server responded with a status of 403 (Forbidden)
+stallwart.build.js:1 stallwart: failed ping 1
+stallwart.build.js:1 stallwart: failed ping 2
+stallwart.build.js:1 stallwart: failed ping 3
+16644f42-8ec5-4134-80a8-c2623329b5c6-00-2zu6rr4ycqii9.picard.replit.dev/:1 
+        
+        
+        Failed to load resource: the server responded with a status of 403 (Forbidden)
+727Third-party cookie will be blocked in future Microsoft Edge versions as part of unpartitioned third-party cookie deprecation.
