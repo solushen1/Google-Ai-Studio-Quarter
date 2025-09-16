@@ -3,6 +3,7 @@ import { GoogleGenAI, Type } from "@google/genai";
 import { Department } from '../types';
 import Button from './ui/Button';
 import Card from './ui/Card';
+import Input from './ui/Input';
 import Textarea from './ui/Textarea';
 import { SpinnerIcon } from './icons/EditorIcons';
 
@@ -54,6 +55,7 @@ const responseSchema = {
 
 const AITemplateGenerator: React.FC<AITemplateGeneratorProps> = ({ onTemplateCreated }) => {
   const [prompt, setPrompt] = useState('');
+  const [apiKey, setApiKey] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -62,11 +64,15 @@ const AITemplateGenerator: React.FC<AITemplateGeneratorProps> = ({ onTemplateCre
       setError('Please enter a description for the report template.');
       return;
     }
+    if (!apiKey.trim()) {
+      setError('Please enter your Gemini API key.');
+      return;
+    }
     setIsLoading(true);
     setError(null);
 
     try {
-        const ai = new GoogleGenAI({ apiKey: process.env.API_KEY as string });
+        const ai = new GoogleGenAI({ apiKey: apiKey.trim() });
         
         const fullPrompt = `Based on the user's request, create a detailed report template for a church department. The output must be a JSON object that strictly follows the provided schema.
 
@@ -116,6 +122,22 @@ const AITemplateGenerator: React.FC<AITemplateGeneratorProps> = ({ onTemplateCre
         <p className="text-sm text-slate-600 mb-4">
           Describe the report you want to create. For example, "A monthly report for the church choir with member attendance and songs performed."
         </p>
+        <div className="mb-4">
+          <label htmlFor="api-key" className="block text-sm font-medium text-slate-700 mb-2">
+            Gemini API Key
+          </label>
+          <Input
+            id="api-key"
+            type="password"
+            value={apiKey}
+            onChange={(e) => setApiKey(e.target.value)}
+            placeholder="Enter your Gemini API key..."
+            disabled={isLoading}
+          />
+          <p className="text-xs text-slate-500 mt-1">
+            Get your API key from <a href="https://ai.google.dev/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">https://ai.google.dev/</a>
+          </p>
+        </div>
         <Textarea
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}

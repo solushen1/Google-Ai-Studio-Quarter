@@ -1,7 +1,6 @@
 import { Department, ReportData, StoredFile } from '../types';
-
-// jsPDF and autoTable are loaded from script tags in index.html
-declare const jspdf: any;
+import { jsPDF } from 'jspdf';
+import autoTable from 'jspdf-autotable';
 
 const VERTICAL_PHOTO_GAP = 8; // Increased from 5 to add more space
 
@@ -115,7 +114,6 @@ const addPhotosToDoc = (doc: any, photos: StoredFile[], currentCursorY: number, 
 };
 
 export const generatePdf = (schema: Department, data: ReportData) => {
-  const { jsPDF } = jspdf;
   const doc = new jsPDF({ orientation: 'p', unit: 'mm', format: 'a4' });
   
   const pageHeight = doc.internal.pageSize.height;
@@ -235,7 +233,7 @@ export const generatePdf = (schema: Department, data: ReportData) => {
       
       if (body.length > 0) {
         checkPageBreak(20); // Minimum table height
-        doc.autoTable({
+        autoTable(doc, {
           startY: cursorY,
           head: head,
           body: body,
