@@ -15,7 +15,6 @@ A React/TypeScript application for creating and managing Seventh-day Adventist C
 - **Database**: Dexie (IndexedDB) for client-side storage
 - **Styling**: Tailwind CSS (via CDN)
 - **PDF Generation**: jsPDF with autoTable plugin
-- **AI Integration**: Google Gemini API (user-provided key)
 
 ## Recent Changes (Import Setup)
 - Updated Vite configuration for Replit proxy support (host: 0.0.0.0, port: 5000)
@@ -32,7 +31,6 @@ A React/TypeScript application for creating and managing Seventh-day Adventist C
 - **Port**: 5000
 
 ## User Setup Required
-1. Users need to provide their own Gemini API key for AI features
 2. Get API key from: https://ai.google.dev/
 3. Enter key in the AI Template Generator when prompted
 
