@@ -6,9 +6,8 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5000,
     hmr: {
-      clientPort: 443
-    },
-    allowedHosts: 'all'
+      port: 443
+    }
   },
   resolve: {
     alias: {

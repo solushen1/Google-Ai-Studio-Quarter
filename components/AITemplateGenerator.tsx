@@ -72,7 +72,8 @@ const AITemplateGenerator: React.FC<AITemplateGeneratorProps> = ({ onTemplateCre
     setError(null);
 
     try {
-        const ai = new GoogleGenAI({ apiKey: apiKey.trim() });
+        const client = new GoogleGenAI({ apiKey: apiKey.trim() });
+        const model = client.getGenerativeModel({ model: 'gemini-2.0-flash' });
         
         const fullPrompt = `Based on the user's request, create a detailed report template for a church department. The output must be a JSON object that strictly follows the provided schema.
 
@@ -87,16 +88,15 @@ const AITemplateGenerator: React.FC<AITemplateGeneratorProps> = ({ onTemplateCre
         - Include a 'Signatures' section at the end with fields of type 'signature'.
         - You can add 'allowPhotos: true' to any section where pictures might be relevant.`;
 
-        const response = await ai.models.generateContent({
-            model: "gemini-2.5-flash",
-            contents: fullPrompt,
-            config: {
+        const response = await model.generateContent({
+            contents: [{ role: 'user', parts: [{ text: fullPrompt }] }],
+            generationConfig: {
                 responseMimeType: "application/json",
                 responseSchema: responseSchema,
             },
         });
 
-      const jsonString = response.text;
+      const jsonString = response.text();
       const generatedSchema = JSON.parse(jsonString) as Department;
       
       // Basic validation

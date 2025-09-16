@@ -1,0 +1,30 @@
+/* Additional custom styles for SDA Quarterly Reports */
+
+/* Ensure consistent font rendering */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom styles for form elements */
+.form-field {
+  margin-bottom: 1rem;
+}
+
+/* Print styles for PDF export */
+@media print {
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+  }
+  
+  .no-print {
+    display: none;
+  }
+}
+
+/* Focus styles for accessibility */
+.focus\:ring-2:focus {
+  outline: 2px solid #3b82f6;
+  outline-offset: 2px;
+}
