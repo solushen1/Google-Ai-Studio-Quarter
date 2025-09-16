@@ -1,0 +1,5 @@
+{
+  "name": "SDA Quarterly Reports",
+  "description": "An offline-first application for Seventh-day Adventist church department leaders to fill out and generate quarterly reports based on official templates.",
+  "requestFramePermissions": []
+}
